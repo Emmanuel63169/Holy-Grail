@@ -1,0 +1,108 @@
+/* This is my Style Sheet for Flex and Grid Grails */
+/* General */
+
+/* -_-_-_- Grid -_-_-_- */
+.grid_body{
+    background-color: silver;
+    display: grid;
+    grid-template-columns: 20% 61% 20%;
+    grid-template-rows: 33% 178% 33%;
+}
+.grid_header{
+    background: lightsteelblue;
+    color: black;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 5px 20px;
+    font-size: 1.5vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.links{
+    text-align: right;
+}
+.left_side{
+    background-color: lightskyblue;
+    text-align: center;
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+    padding: 2%;
+}
+.middle_side{
+    background-color: lightseagreen;
+    text-align: center;
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    padding: 2%;
+}
+.right_side{
+    background-color: rgb(35, 164, 35);
+    text-align: center;
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+    padding: 2%;
+}
+.grid_footer{
+ background-color: bisque;
+ text-align: center;
+ grid-row-start: 3;
+ grid-row-end: 3;
+ grid-column-start: 1;
+ grid-column-end: 4;
+ padding: 2%;
+}
+/* -_-_-_- Flex -_-_-_-*/
+.flex_body{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50pc;
+    background-color: blanchedalmond;
+}
+.flex_header{
+    background: lightsteelblue;
+    color: black;
+    align-items: start;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 1vw;
+}
+
+.left_section{
+    background-color: lightskyblue;
+    align-self: start;
+    height: 100%;
+    width: 25%;
+    padding: 2%;
+}
+.middle_section{
+    background-color: lightseagreen;
+    align-self: start;
+    height: 100%;
+    width: 38%;
+    padding: 2%;
+}
+.right_section{
+    background-color: rgb(35, 164, 35);
+    align-self: start;
+    height: 100%;
+    width: 25%;
+    padding: 2%;
+}
+.flex_footer{
+    background: blanchedalmond;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 1vw;
+}
